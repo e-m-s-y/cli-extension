@@ -1,0 +1,24 @@
+{
+    "name": "@foly/cli-extension",
+    "version": "1.0.0",
+    "description": "A plugin with additional Command Line Interface commands, used for prototyping",
+    "license": "CC BY-ND 4.0",
+    "contributors": [
+        "emsy <https://github.com/e-m-s-y>"
+    ],
+    "files": [
+        "dist/*.js",
+        "dist/commands/*.js"
+    ],
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "pnpm clean && pnpm compile",
+        "clean": "rimraf dist",
+        "compile": "../../node_modules/typescript/bin/tsc"
+    },
+    "devDependencies": {
+        "@solar-network/crypto": "workspace:*",
+        "@solar-network/core-kernel": "workspace:*",
+        "@solar-network/core-cli": "workspace:*"
+    }
+}
